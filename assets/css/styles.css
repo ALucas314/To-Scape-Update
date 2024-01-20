@@ -1,0 +1,159 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(13, 46, 73);
+    background-image: url('/assets/img/montanhas-cobertas-de-neve-entre-o-castelo-renderizacao-em-3d.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    background-size: 210vh;
+    color: azure;
+}
+
+button {
+    background-color: rgba(43, 43, 43, 0.745);
+    color: #ccc;
+    border-radius: 10px;
+    display: block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#game-container {
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    gap: 1px;
+    border: 1px solid #ccc;
+    position: relative;
+    background-color: rgba(122, 122, 122, 0.317);
+}
+img {
+    width: 3rem;
+}
+#player {
+    background-image: url('/assets/img/nando%20(1).PNG%20(1).PNG');
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    position: absolute;
+}
+
+#opponent {
+    background-image: url('/assets/img/halu%20(1).PNG');
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    position: absolute;
+}
+
+#score-container {
+    top: 10px;
+    right: 10px;
+    background-color: rgba(43, 43, 43, 0.745);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#result {
+    color: white;
+    font-weight: bold;
+}
+
+#timer {
+    color: white;
+}
+
+#controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    border-radius: 10px;
+}
+
+#up {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c3e50;
+    border: 1px solid #34495e;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#left {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c3e50;
+    border: 1px solid #34495e;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#right {
+    grid-column: 3;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c3e50;
+    border: 1px solid #34495e;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#down {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c3e50;
+    border: 1px solid #34495e;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 376px) {
+    button {
+        background-color: #1c0c24;
+        color: #ccc;
+        border-radius: 10px;
+        display: block;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-position: center;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    #game-container {
+        width: 90vw;
+        height: 90vw;
+        max-width: 320px;
+        max-height: 320px;
+        margin-bottom: 0;
+        background-color: rgba(255, 255, 255, 0.088);
+    }
+
+    #controls {
+        width: 10px;
+        margin-right: 150px;
+    }
+}
