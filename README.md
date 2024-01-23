@@ -38,7 +38,7 @@ Basicamente o projeto foi capaz de realizar as seguintes tarefas:
 ## 🚀 Link do site copie e cole no navegador!
 
 ```
-https://game-4ypp.vercel.app/
+https://to-scape-update.vercel.app/
 ```
 
 
